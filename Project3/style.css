@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    
+}
+nav{
+   width: 100%;
+   height: 350px;
+  border-bottom: 1px solid black;
+
+}
+#nav_part1{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: right;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#nav_part1 a{
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+    font-size: 14px;
+    font-weight: 600;
+}
+#nav_part1 a:hover{
+    color: rgb(0, 0, 0);
+}
+#nav_part2{
+    width: 100%;
+    height: calc(100% - 40px);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#nav_part2 #top{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;  
+}
+#nav_part2 #top img{
+    width: 320px;
+}
+#nav_part2 #top #search{
+    width: 700px;
+    
+    height: 45px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 30px;
+   
+}
+#nav_part2 input{
+    width: 70%;
+    height: 100%;
+    text-decoration: none;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 20px;
+    outline: none;
+}
+#nav_part2 select{
+    width: 20%;
+    height: 100%;
+    border:  none;
+    color: rgb(109, 102, 102);
+    outline: none;
+}
+#nav_part2 #top .ri-search-line{
+    color: white;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    font-size: 20px;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+}
+#nav_part2 #top h4{
+    position: relative;
+    font-size: 25px;
+    
+}
+#nav_part2 #top h4 p{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    border-radius: 30%;
+    padding: 2px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+   
+}
+#nav_part2 #bottom{
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#nav_part2 #bottom h4{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+#nav_part2 a{
+    text-decoration: none;
+    color: rgb(86, 84, 84);
+}
+#nav_part2 a:hover{
+    color: black;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding-left: 100px;
+    padding-right: 100px;   
+
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+   
+}
+.menu button{
+    padding: 8px;
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+}
+.menu #btn {
+    background-color: #E8E8E8;
+    border-radius: 5px;
+}
+.hero .main_hero{
+    width: 100%;
+    height: calc(100% - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .main_hero .hero_left{
+width: 50%;
+height: 100%;
+}
+
+.hero .main_hero .hero_left img{
+    width: 85%;
+    height: 90%;
+}
+.hero .main_hero .hero_right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.main_hero .hero_right h6{
+    font-size: 12px;
+}
+.main_hero .hero_right h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 500;
+    
+}
+.main_hero .hero_right h1::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    top: 100%;
+}
+
+
+.addToCart{
+    width: 330px;
+    height: 45px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.addToCart input{
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+}
+.addToCart button{
+ height: 100%;
+ border-radius: 30px;
+ padding-left: 10px;
+ padding-right: 15px;
+ font-size: 16px;
+ width: 200px;
+ color: white;
+ background-color: red;
+ border: none;
+}
+
+.hero .element{
+    width: 320px;
+    height: 100px;
+    
+}
+
+.hero .element img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.photo{
+    width: 100%;
+    min-height: 400vh;
+    padding: 100px;
+}
+.photo .photos{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.photo .photos video{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.photo .photos img{
+    width: 100%;
+}
+
+.photo .photos p{
+    margin-top: 50px;
+    color: rgb(147, 147, 192);
+}
+.photo .photos p:hover{
+    color: rgb(0, 0, 247);
+    cursor: pointer;
+}
+.photo h3{
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.photo h3::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: rgb(255, 140, 0);
+    position: absolute;
+    top: 100%;
+    left: 41.5%;
+}
+
+.photo .photos #image{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.products{
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.products h1{
+    position: relative;
+}
+.products h1::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    top: 100%;
+    position: absolute;
+    left: 0;
+} 
+.products #element{
+    width: 100%;
+    height: 85%;
+    
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+.products #element .elements{
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+   gap: 10px;
+  
+}
+
+.products #element .elements h6{
+    color: rgb(126, 117, 117);
+}
+.products #element .elements a{
+    text-decoration: none;
+}
+.products #element .elements img{
+    width: 100%;
+    }
+
+.products #element .elements #icon{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+#element .elements #icon img{
+    width: 38px;
+}
+
+.products #para{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left:30px ;
+    
+}
